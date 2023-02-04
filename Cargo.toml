@@ -1,6 +1,6 @@
 [package]
 name = "audio_plugin"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Carey McManus <careymcmanus@gmail.com>"]
 license = "GPL-3.0-or-later"
@@ -14,7 +14,7 @@ members = ["xtask"]
 crate-type = ["cdylib","lib"]
 
 [dependencies]
-nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", features = ["assert_process_allocs"] }
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", features = ["assert_process_allocs", "standalone"] }
 nih_plug_vizia = { git = "https://github.com/robbert-vdh/nih-plug.git"}
 
 atomic_float = "0.1"

@@ -1,6 +1,6 @@
-use nih_plug::prelude::nih_export_standalone;
+use nih_plug::prelude::*;
 
-use AudioPlugin;
+use audio_plugin::AudioPlugin;
 
 fn main() {
     nih_export_standalone::<AudioPlugin>();
